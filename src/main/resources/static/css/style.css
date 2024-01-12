@@ -1,0 +1,425 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: 'Pretendard';
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+a{
+	color: #000;
+	text-decoration: none;
+}
+
+.inner_1280{
+	width: 1280px;
+}
+
+header{
+	margin: 0 auto;
+	border-bottom: 1px solid #ddd;
+}
+header nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+	margin: 0 auto;
+	flex-direction: column;
+	padding: 15px 0;
+
+}
+.bx-wrapper{
+	box-shadow: none;
+	height: 100%;
+	border: none;
+}
+.bx-wrapper .bx-viewport{
+	height: 100% !important;
+}
+
+.bx-wrapper .bx-pager{
+	bottom: -50px;
+}
+
+header nav .top_nav,
+header nav .btm_nav{
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header nav .top_nav{
+	justify-content: flex-end;
+	height: 20%;
+}
+
+
+header nav .top_nav .nav_login{
+	display: flex;
+	width: 27%;
+}
+
+header nav .btm_nav{
+	justify-content: space-between;
+}
+
+header nav .btm_nav .nav_logo,
+header nav .btm_nav .nav_menu,
+header nav .top_nav .nav_login{
+    display: flex;
+}
+header nav .btm_nav .nav_logo{
+	width: auto;
+	height: 100%;
+}
+header nav .btm_nav .nav_logo .logo_img{
+	background: url('../img/logo.png') center center no-repeat;
+	width: 120px;
+
+	aspect-ratio: 1/1;
+	background-size: contain;
+}
+
+
+header nav .btm_nav .nav_menu ul,
+header nav .top_nav .nav_login ul{
+    display: flex;
+    justify-content: space-between;
+	width: 100%;
+}
+
+header nav .top_nav .nav_login ul li a{
+	font-size: 14px;
+	color: #7c7c7c;
+}
+
+
+
+header nav .btm_nav{
+	height: 80%;
+}
+
+
+header nav .btm_nav .nav_menu{
+    width: 25%;
+	margin-left: -58%;
+	position: relative;
+}
+
+header nav .btm_nav .nav_menu input{
+	width: 100%;
+	height: 30px;
+	line-height: 50px;
+}
+
+header nav .btm_nav .nav_menu ul li{
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav .btm_nav .nav_menu .search_ico > i{
+	font-size: 18px;
+	position: absolute;
+	right: 10px;
+	top: 7px;
+}
+
+header nav .btm_nav .nav_cate{
+
+}
+
+header nav .btm_nav .nav_cate a i{
+	font-size: 27px;
+}
+
+section .main_slide{
+	margin-top: 65px;
+	height: 460px;
+	margin-bottom: 120px;
+}
+
+section .main_slide .slider{
+	height: 100%;
+	margin-left: -1000px;
+}
+
+section .main_slide .slider .main_slide_img{
+	width: 100%;
+	height: 100%;
+}
+
+section .main_slide .slider .main_slide_wrap{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+section .main_slide .slider .main_slide_wrap a{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+}
+
+section .main_slide .slider .main_slide_wrap p{
+	font-size: 25px;
+	font-weight: bold;	
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+section .main_slide .slider .main_slide_wrap span{
+	margin-bottom: 10px;
+	color: #777;
+}
+
+section .main_slide .slider .main_slide_wrap .main_slide01{
+	background: url('../img/main_slide01.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+section .main_slide .slider .main_slide02{
+	background: url('../img/main_slide02.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+section .main_slide .slider .main_slide03{
+	background: url('../img/main_slide03.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+section .main_slide .slider .main_slide04{
+	background: url('../img/main_slide04.jpg') center center no-repeat;
+	background-size: cover;
+}
+
+section .mid_banner_wrap{
+	display: flex;
+	margin: 0 auto;
+}
+
+section .mid_banner_wrap .mid_banner{
+	width: 100%;
+	height: 120px;
+	background-color: #ddd;
+}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	margin-top: 100px;
+}
+
+footer .ft_wrap{
+
+}
+
+footer .ft_wrap .ft_top_container{
+	width: 100%;
+	border-top: 1px solid #e4e4e4;
+	border-bottom: 1px solid #e4e4e4;
+}
+
+footer .ft_wrap .ft_top_container .ft_top{
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+footer .ft_wrap .ft_top_container .ft_top .fm_site_lnk select{
+	border: 1px solid #ddd;
+}
+
+footer .ft_wrap .ft_top ul{
+	display: flex;
+	width: 38%;
+	justify-content: space-between;
+}
+
+footer .ft_wrap .ft_top ul li > a{
+	color: #777;
+}
+
+footer .ft_wrap .ft_top ul li > span{
+	color: #d6d4d4;
+}
+
+footer .ft_wrap .ft_btm{
+	margin: 0 auto;
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	justify-content: space-between;
+}
+
+footer .ft_wrap .ft_btm .ft_btm_left{
+	width: 70%;
+	display: flex;
+	flex-direction: column;
+}
+
+footer .ft_wrap .ft_btm .ft_btm_left .ft_comp_tit{
+	font-size: 15px;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+footer .ft_wrap .ft_btm .ft_btm_left .ft_comp_tel{
+	font-size: 29px;
+	font-weight: bold;
+}
+
+footer .ft_wrap .ft_btm .ft_btm_left span{
+	margin-top: 10px;
+	color: #777;
+}
+
+footer .ft_wrap .ft_btm .ft_btm_right{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+footer .ft_wrap .ft_btm .ft_btm_right i{
+	font-size: 35px;
+}
+
+footer .ft_wrap .ft_btm .ft_btm_right .ft_btm_sns_wrap{
+	display: flex;
+	justify-content: space-between;
+	width: 80px;
+}
+
+footer .ft_wrap .ft_btm .ft_btm_right span{
+	margin-right: 10px;
+}
+
+
+/* login페이지 */
+section .login_container{
+	margin: 0 auto;
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+
+section .login_container .login_wrap{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+section .login_container .login_wrap .login_tit{
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 30px;
+}
+
+section .login_container .login_wrap form{
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+}
+
+section .login_container .login_wrap form ul li{
+	display: flex;
+	flex-direction: column;
+}
+
+section .login_container .login_wrap form ul li .save_id_wrap{
+	display: flex;
+	align-items: center;
+}
+
+section .login_container .login_wrap form ul li .find_account{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 65%;
+}
+
+section .login_container .login_wrap form ul li .find_account a{
+    font-size: 15px;
+}
+
+section .login_container .login_wrap form ul li input{
+	width: auto;
+	margin-bottom: 10px;
+	line-height: 30px;
+	font-size: 16px;
+}
+
+section .login_container .login_wrap form input[type="submit"]{
+	margin-top: 30px;
+	font-size: 20px;
+	height: 50px;
+	font-weight: bold;
+	background-color: #ff7300;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+section .login_container .login_wrap form ul .id_option{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+section .login_container .login_wrap form ul li input[type="checkbox"]{
+	margin: 0 auto;
+	margin-right: 10px;
+
+}

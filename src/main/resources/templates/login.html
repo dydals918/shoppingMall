@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="inner_1280">
+            <div class="top_nav">
+                <div class="nav_login">
+                    <ul>
+                        <li>
+                            <a href="/login">로그인</a>
+                        </li>
+                        <li>
+                            <a href="#">회원가입</a>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                        </li>
+                        <li>
+                            <a href="#">장바구니</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="btm_nav">
+                <div class="nav_logo">
+                    <a href="/" class="logo_img"></a>
+                </div>
+                <div class="nav_menu">
+                    <input type="text" placeholder="상품을 검색하세요">
+                    <a href="#" class="search_ico">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </div>
+                <div class="nav_cate">
+                    <a href="#">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section>
+        <div class="login_container inner_1280">
+            <div class="login_wrap">
+                <p class="login_tit">로그인</p>
+                <form action="/login" method="post">
+                    <ul>
+                        <li>
+                            <input type="text" placeholder="아이디" name="memberId">
+                        </li>
+                        <li>
+                            <input type="password" placeholder="비밀번호" name="memberPw">
+                        </li>
+                        <li class="id_option">
+                            <div class="save_id_wrap">
+                             <input type="checkbox" value="아이디 저장">
+                             <span>아이디 저장</span>
+                            </div>
+                            <div class="find_account">
+                                <a href="#">아이디 찾기</a>
+                                <a href="#">비밀번호 찾기</a>
+                                <a href="#">회원가입</a>
+                            </div>
+                        </li>
+                    </ul>
+                    <input type="submit" value="로그인">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="ft_wrap">
+            <div class="ft_top_container">
+                <div class="ft_top inner_1280">
+                    <ul>
+                        <li>
+                            <a href="#">회사소개</a>
+                        </li>
+                        <li>
+                            <span> | </span>
+                        </li>
+                        <li>
+                            <a href="#">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <span> | </span>
+                        </li>
+                        <li>
+                            <a href="#">이용약관</a>
+                        </li>
+                        <li>
+                            <span> | </span>
+                        </li>
+                        <li>    
+                            <a href="#">청소년 보호방침</a>
+                        </li>
+                        <li>
+                            <span> | </span>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                        </li>
+                    </ul>
+                    <div class="fm_site_lnk">
+                        <select name="" id="">
+                            <option value="FAMILY SITE"  selected>FAMILY SITE</option>
+                            <option value="Openstack Dashboard">Openstack Dashobard</option>
+                            <option value="Spring board">Spring Board</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="ft_btm inner_1280">
+                <div class="ft_btm_left">
+                    <p class="ft_comp_tit">(주)쇼핑몰테스트페이지</p>
+                    <a href="#" class="ft_comp_tel">1577-1700</a>
+                    <span>대표자 : 홍길동 서울특별시 강남구 테헤란로123 사업자등록번호 : 877-12-12345 통신판매업 신고번호 : 제2024-서울강남-01234호</span>
+                    <span>개인정보보호책임자 : 임꺽정 Fax : 02-1234-1234 test@test.com</span>
+                </div>
+                <div class="ft_btm_right">
+                    <span>SNS 방문하기</span>
+                    <div class="ft_btm_sns_wrap">
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
