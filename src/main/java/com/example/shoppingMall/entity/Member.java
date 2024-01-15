@@ -1,6 +1,7 @@
 package com.example.shoppingMall.entity;
 
 import jakarta.persistence.*;
+import lombok.Builder;
 import lombok.Getter;
 
 import java.util.Date;
