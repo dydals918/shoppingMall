@@ -36,6 +36,17 @@ public class MemberController {
         }
     }
 
+    @GetMapping("/logout")
+    public String logout(HttpServletRequest httpServletRequest){
+        HttpSession session = httpServletRequest.getSession(false);
+        if (session != null){
+            session.invalidate();
+            return "redirect:/";
+        }
+
+        return "redirect:/";
+    }
+
     @GetMapping("/register")
     public String inRegisterPage(){
         return "register";
