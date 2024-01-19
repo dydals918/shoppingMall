@@ -1,8 +1,9 @@
 package com.example.shoppingMall.entity;
 
+import com.example.shoppingMall.enums.MemberRole;
 import jakarta.persistence.*;
-import lombok.Builder;
 import lombok.Getter;
+import lombok.Setter;
 
 import java.util.Date;
 
@@ -20,6 +21,11 @@ public class Member {
     private String memberName;
     private String memberGender;
 
+    @Setter
+    @Column(nullable = false)
+    @Enumerated(EnumType.STRING)
+    private MemberRole role;
+
     @Temporal(TemporalType.TIMESTAMP)
     private Date createDate;
 
@@ -33,7 +39,9 @@ public class Member {
         member.memberPw = memberPw;
         member.memberName = memberName;
         member.memberGender = memberGender;
+        member.setRole(MemberRole.USER);
         return member;
 
     }
+
 }

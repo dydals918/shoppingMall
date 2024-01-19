@@ -120,7 +120,7 @@ header nav .btm_nav .nav_logo{
 	height: 100%;
 }
 header nav .btm_nav .nav_logo .logo_img{
-	background: url('../img/logo.png') center center no-repeat;
+	background: url('../images/logo.png') center center no-repeat;
 	width: 120px;
 
 	aspect-ratio: 1/1;
@@ -221,22 +221,22 @@ section .main_slide .slider .main_slide_wrap span{
 }
 
 section .main_slide .slider .main_slide_wrap .main_slide01{
-	background: url('../img/main_slide01.jpg') center center no-repeat;
+	background: url('../images/main_slide01.jpg') center center no-repeat;
 	background-size: cover;
 }
 
 section .main_slide .slider .main_slide02{
-	background: url('../img/main_slide02.jpg') center center no-repeat;
+	background: url('../images/main_slide02.jpg') center center no-repeat;
 	background-size: cover;
 }
 
 section .main_slide .slider .main_slide03{
-	background: url('../img/main_slide03.jpg') center center no-repeat;
+	background: url('../images/main_slide03.jpg') center center no-repeat;
 	background-size: cover;
 }
 
 section .main_slide .slider .main_slide04{
-	background: url('../img/main_slide04.jpg') center center no-repeat;
+	background: url('../images/main_slide04.jpg') center center no-repeat;
 	background-size: cover;
 }
 
